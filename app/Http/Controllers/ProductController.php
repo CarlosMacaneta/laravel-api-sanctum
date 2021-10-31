@@ -9,6 +9,13 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    public function index(): JsonResponse
+    {
+        $products = Product::all();
+
+        return response()->json(['products' => $products], 200);
+    }
+
     public function store(ProductRequest $request): JsonResponse
     {
         Product::create($request->all());
