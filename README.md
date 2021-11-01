@@ -5,7 +5,9 @@ This api was built to guide beginners.
 
 ## Run API
 
-- On your terminal: php artisan serve, then <http://localhost:8000> will be started.
+- On your terminal:
+  - composer install
+  - php artisan serve, then <http://localhost:8000> will be started.
 - To stop server: ctrl + c or command + c
 
 ## License
